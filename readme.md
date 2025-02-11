@@ -1,14 +1,16 @@
-## Install Restic  dan Rclone
+# Install Restic Backrest Rclone
+
+### 1. Install Restic  dan Rclone 
 
 ```
 apt -y update
 apt -y install restic rclone
 ```
 
-## Install Backrest
+### 2. Install Backrest
 Untuk install backrest bisa ikuti panduan dari situs GitHub [BackRest](https://github.com/garethgeorge/backrest)
 
-## Configurasi Rclone ke WebDav Nextcloud
+### 3.  Configurasi Rclone ke WebDav Nextcloud
 ```
 rclone config
 ```
@@ -127,8 +129,10 @@ e/n/d/r/c/s/q> q
 
 ```
 
-Selesai, kita bisa test cek isi folder menggunakan command berikut
+Konfigurasi Rclone selesai, kita bisa test cek isi folder menggunakan command berikut
 ```
 rclone ls desbox:/
 ```
+
+### 4. Seting BackRest WebUI
 
