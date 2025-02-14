@@ -1,16 +1,17 @@
 # Install Restic Backrest Rclone
 
-### 1. Install Restic  dan Rclone 
+## 1. Install Restic  dan Rclone 
 
 ```
 apt -y update
 apt -y install restic rclone
 ```
 
-### 2. Install Backrest
+## 2. Install Backrest
 Untuk install backrest bisa ikuti panduan dari situs GitHub [BackRest](https://github.com/garethgeorge/backrest)
 
-### 3.  Configurasi Rclone ke WebDav Nextcloud
+## 3.  Configurasi Rclone ke WebDav Nextcloud
+3.1. Jalankan Config
 ```
 rclone config
 ```
@@ -19,7 +20,7 @@ selanjutnya ikuti arahan
 ```bash
 $ rclone config
 ```
-pilih new dengan tekan N
+3.2. pilih new dengan tekan `n`
 ```
 No remotes found - make a new one
 n) New remote
@@ -27,11 +28,11 @@ s) Set configuration password
 q) Quit config
 n/s/q> n
 ```
-berikan nama `desbox`
+3.3. berikan nama `desbox`
 ```
 name> desbox
 ```
-pilih type storage , disini kita gunakan `Webdav` tekan `31`
+3.4. pilih type storage , disini kita gunakan `Webdav` tekan `31`
 ```
 Type of storage to configure.
 Enter a string value. Press Enter for the default ("").
@@ -46,7 +47,8 @@ Choose a number from below, or type in your own value
    \ "seafile"
 Storage> 31
 ```
-kita diminta masukkan url dari WebDav
+3.5. kita diminta masukkan url dari WebDav, `https://desbox.desnet.id/remote.php/dav/files/<usernamenextcloud>`
+contoh : `https://desbox.desnet.id/remote.php/dav/files/eriyanto`
 ```
 ** See help for webdav backend at: https://rclone.org/webdav/ **
 
@@ -57,7 +59,7 @@ Choose a number from below, or type in your own value
    \ "https://example.com"
 url> https://desbox.desnet.id/remote.php/dav/files/eriyanto
 ```
-Nama Service dari WebDav kita pilih Nextcloud
+3.6. Nama Service dari WebDav kita pilih `Nextcloud` masukkan angka `1`
 ```
 Name of the Webdav site/service/software you are using
 Enter a string value. Press Enter for the default ("").
@@ -68,14 +70,14 @@ Choose a number from below, or type in your own value
    \ "owncloud"
 vendor> 1
 ```
-Selanjutnya masukkan Username
+3.7. Selanjutnya masukkan Username
 
 ```
 User name
 Enter a string value. Press Enter for the default ("").
 user> eriyanto
 ```
-Sekarang kita diminta masukkan Password
+3.8. Sekarang kita diminta masukkan Password
 ```
 Password.
 y) Yes type in my own password
@@ -87,7 +89,7 @@ password:
 Confirm the password: <masukkan password sekalilagi>
 password: <masukkan password>
 ```
-pada opsi token kita bisa lewati saja dan biarkan `default`
+3.9. pada opsi token kita bisa lewati saja dan biarkan `default`
 ```
 Bearer token instead of user/pass (eg a Macaroon)
 Enter a string value. Press Enter for the default ("").
@@ -98,7 +100,7 @@ n) No (default)
 y/n> n
 ```
 
-Ringkasan configurasi yang telah kita buat sperti berikut
+3.10. Ringkasan configurasi yang telah kita buat sperti berikut
 ```
 Remote config
 --------------------
@@ -129,10 +131,11 @@ e/n/d/r/c/s/q> q
 
 ```
 
+
 Konfigurasi Rclone selesai, kita bisa test cek isi folder menggunakan command berikut
 ```
 rclone ls desbox:/
 ```
 
-### 4. Seting BackRest WebUI
+## 4. Seting BackRest WebUI
 
