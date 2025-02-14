@@ -1,3 +1,10 @@
+# Backup Data menggunakan Restic ke NextCloud
+Penggunaan rclone untuk upload restic ke nextcloud menurut saya lebih efektif daripada menggunakan rsync 
+- Dari segi keamanan : tidak perlu pasang ssh key di ke server nextcloud
+- Quota Management : jika quota full , maka dengan metode WebDav tidak akan bisa upload karena target storage full. Sebaliknya jika menggunakan rsync akan bablas
+- ketika menggunakan rsync perlu scan tiap kali ada penambahan file baru via CLI tidak langsung terbaca di UI Nextcloud
+
+  
 # Install Restic Backrest Rclone
 
 ## 1. Install Restic  dan Rclone 
