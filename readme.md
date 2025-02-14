@@ -139,3 +139,12 @@ rclone ls desbox:/
 
 ## 4. Seting BackRest WebUI
 
+Dashboard
+![image](https://github.com/deseriyanto/resticwithrclone/blob/main/images/1.jpeg)
+
+4.2. REPO
+![image](https://github.com/deseriyanto/resticwithrclone/blob/main/images/2%20repo.jpeg)
+
+4.3. PLAN JOB
+![image](https://github.com/deseriyanto/resticwithrclone/blob/main/images/3.jpeg)
+
