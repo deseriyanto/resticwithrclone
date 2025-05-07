@@ -25,9 +25,10 @@ scoop install extras/backrest
 # 3. Configurasi #
 ### 3.1. Setting Restic
 abaikan, setingan langsung dari backrest
-### 3.2. Setting RClone
-```
+### 3.2. Setting RClone dan Backrest 
+Pengaturan RClone dan Backrest sama seperti config di linux
+
+```bash
 rclone config
 ```
 
-### 3.3. Setting Backrest
