@@ -61,8 +61,8 @@ Choose a number from below, or type in your own value
    \ "seafile"
 Storage> 31
 ```
-3.5. kita diminta masukkan url dari WebDav, `https://desbox.desnet.id/remote.php/dav/files/<usernamenextcloud>`
-contoh : `https://desbox.desnet.id/remote.php/dav/files/eriyanto`
+3.5. kita diminta masukkan url dari WebDav, `https://nextcloud_url/remote.php/dav/files/<usernamenextcloud>`
+contoh : `https://nextcloud_url/remote.php/dav/files/username`
 ```
 ** See help for webdav backend at: https://rclone.org/webdav/ **
 
@@ -71,7 +71,7 @@ Enter a string value. Press Enter for the default ("").
 Choose a number from below, or type in your own value
  1 / Connect to example.com
    \ "https://example.com"
-url> https://desbox.desnet.id/remote.php/dav/files/eriyanto
+url> https://nextcloud_url/remote.php/dav/files/username
 ```
 3.6. Nama Service dari WebDav kita pilih `Nextcloud` masukkan angka `1`
 ```
@@ -89,7 +89,7 @@ vendor> 1
 ```
 User name
 Enter a string value. Press Enter for the default ("").
-user> eriyanto
+user> xxxxx
 ```
 3.8. Sekarang kita diminta masukkan Password
 ```
@@ -119,9 +119,9 @@ y/n> n
 Remote config
 --------------------
 [desbox]
-url = https://desbox.desnet.id/remote.php/dav/files/eriyanto
+url = https://nextcloud_url/remote.php/dav/files/username
 vendor = nextcloud
-user = eriyanto
+user = username
 pass = *** ENCRYPTED ***
 --------------------
 y) Yes this is OK (default)
