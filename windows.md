@@ -145,6 +145,8 @@ e/n/d/r/c/s/q> q
 
 ```
 
+** Notes : sesuaikan chunk_size rclone ke size 2GB, secara default max upload 10MB **
+---
 
 Konfigurasi Rclone selesai, kita bisa test cek isi folder menggunakan command berikut
 ```
@@ -161,4 +163,7 @@ Dashboard
 
 4.3. PLAN JOB
 ![image](https://github.com/deseriyanto/resticwithrclone/blob/main/images/3.jpeg)
+
+
+
 
